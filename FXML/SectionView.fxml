@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0"
+      style="-fx-background-radius: 10; -fx-background-color: rgba(255,255,255,0.1);"
+      xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox alignment="CENTER" fillHeight="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              VBox.vgrow="NEVER">
+            <children>
+                <Label text="Playlists" textFill="WHITE">
+                    <font>
+                        <Font name="SF Pro Display Bold" size="20.0"/>
+                    </font>
+                </Label>
+                <Region maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS"/>
+                <Label style="-fx-opacity: 0.4;" text="30" textFill="WHITE">
+                    <font>
+                        <Font name="SF Pro Display Regular" size="10.0"/>
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <ListView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="155.0"
+                  style="-fx-background-color: transperent;"/>
+    </children>
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+    </padding>
+</VBox>
