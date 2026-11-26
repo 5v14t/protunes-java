@@ -1,6 +1,5 @@
 package com._5v14t.protunes.ui.components;
 
-import com._5v14t.protunes.be.Song;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
@@ -12,33 +11,15 @@ import javafx.scene.layout.HBox;
 import java.io.IOException;
 
 public class PlayerView extends HBox {
-    @FXML
-    private Button btnBackward;
-
-    @FXML
-    private Button btnPlayPause;
-
-    @FXML
-    private boolean plyaing = false;
-
-    @FXML
-    private Button btnForward;
-
-    @FXML
-    private ImageView imgCover;
-
-    @FXML
-    private Label lblSongTitle;
-
-    @FXML
-    private Label lblSongArtist;
-
-    @FXML
-    private Slider sldProgressBar;
-
-    @FXML
-    private Button btnMore;
-
+    @FXML private Button    btnBackward;
+    @FXML private Button    btnPlayPause;
+    @FXML private boolean   plyaing = false;
+    @FXML private Button    btnForward;
+    @FXML private ImageView imgCover;
+    @FXML private Label     lblSongTitle;
+    @FXML private Label     lblSongArtist;
+    @FXML private Slider    sldProgressBar;
+    @FXML private Button    btnMore;
     // TODO: Private PlayerManager dependency
 
     public PlayerView() {

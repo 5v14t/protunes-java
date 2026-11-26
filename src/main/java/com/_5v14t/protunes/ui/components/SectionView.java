@@ -13,17 +13,10 @@ import javafx.scene.layout.StackPane;
 import java.io.IOException;
 
 public class SectionView extends StackPane {
-    @FXML
-    private Label lblSectionTitle;
-
-    @FXML
-    private Label lblItemsInSection;
-
-    @FXML
-    private ListView<Song> lstSection;
-
-    @FXML
-    private Button btnAdd;
+    @FXML private Label             lblSectionTitle;
+    @FXML private Label             lblItemsInSection;
+    @FXML private ListView<Song>    lstSection;
+    @FXML private Button            btnAdd;
 
     public SectionView() {
         FXMLLoader loader = new FXMLLoader(

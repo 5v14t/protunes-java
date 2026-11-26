@@ -10,15 +10,9 @@ import javafx.scene.layout.HBox;
 import java.io.IOException;
 
 public class SongItem extends HBox {
-
-    @FXML
-    private ImageView imgCover;
-
-    @FXML
-    private Label lblTitle;
-
-    @FXML
-    private Label lblArtist;
+    @FXML private ImageView imgCover;
+    @FXML private Label     lblTitle;
+    @FXML private Label     lblArtist;
 
     public SongItem() {
         FXMLLoader loader = new FXMLLoader(
