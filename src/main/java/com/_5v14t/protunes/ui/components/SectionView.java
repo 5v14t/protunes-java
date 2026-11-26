@@ -1,6 +1,8 @@
 package com._5v14t.protunes.ui.components;
 
 import com._5v14t.protunes.be.Song;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
@@ -77,5 +79,9 @@ public class SectionView extends StackPane {
 
     public String getButtonText() {
         return btnAdd.getText();
+    }
+
+    public void setAddAction(EventHandler<ActionEvent> action) {
+        btnAdd.setOnAction(action);
     }
 }
