@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root type="HBox"
+         maxHeight="Infinity"
+         maxWidth="Infinity"
+         xmlns="http://javafx.com/javafx/26"
+         xmlns:fx="http://javafx.com/fxml/1">
+
+   <children>
+      <ImageView fx:id="imgCover"
+                 fitHeight="31.0"
+                 fitWidth="31.0"
+                 pickOnBounds="true"
+                 preserveRatio="true"/>
+
+      <VBox maxHeight="Infinity"
+            maxWidth="Infinity"
+            HBox.hgrow="ALWAYS">
+         <children>
+            <Label fx:id="lblTitle" text="Label">
+               <font>
+                  <Font name="SF Pro Text Bold" size="13.0"/>
+               </font>
+            </Label>
+
+            <Label fx:id="lblArtist"
+                   lineSpacing="20.0"
+                   text="Label"
+                   textFill="#0000009a">
+               <font>
+                  <Font name="SF Pro Text Regular" size="10.0"/>
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+
+</fx:root>
