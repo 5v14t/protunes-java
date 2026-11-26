@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import com._5v14t.protunes.ui.components.*?>
+<?import javafx.scene.layout.HeaderBar?>
+
+<?import javafx.scene.control.Label?>
+
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="875.0" spacing="20.0" style="-fx-background-color: #121217;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+    <HeaderBar fx:id="headerBar" minHeight="20" prefHeight="20" maxHeight="20">
+        <center>
+            <Label text="ProTunes" style="-fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-font-family:'SF Pro Bold'; " textFill="WHITE" />
+        </center>
+    </HeaderBar>
+    <children>
+        <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0" VBox.vgrow="ALWAYS">
+            <children>
+                <SectionView fx:id="sectionPlaylists" title="Playlists" HBox.hgrow="ALWAYS" buttonText="Create"/>
+                <SectionView fx:id="sectionPlaylist" showButton="false" title="Playlist Name" HBox.hgrow="ALWAYS" />
+                <Button fx:id="btnAddSongToPlaylist" cache="true" ellipsisString="" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="30.0" style="-fx-background-color: #7B7B98; -fx-background-radius: 7;" text="􀄪" textOverrun="LEADING_WORD_ELLIPSIS" HBox.hgrow="NEVER">
+               <font>
+                  <Font name="SF Pro Text Bold" size="11.0" />
+               </font></Button>
+                <SectionView fx:id="sectionSongs" title="Songs" HBox.hgrow="ALWAYS" buttonText="Import"/>
+            </children>
+        </HBox>
+        <PlayerView fillHeight="false" maxHeight="0.0" maxWidth="0.0" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="NEVER" />
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</VBox>

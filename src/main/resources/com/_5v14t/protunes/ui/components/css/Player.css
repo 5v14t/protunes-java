@@ -1,0 +1,21 @@
+.slider {
+    -fx-padding: 0;
+}
+
+.slider .thumb {
+    -fx-opacity: 0;
+    -fx-padding: 0;
+    -fx-pref-width: 8;
+    -fx-pref-height: 4;
+}
+
+.slider .track {
+    -fx-background-color: linear-gradient(
+            to right,
+            white 50%,
+            rgba(0,0,0,0.3) 50%
+    );
+    -fx-background-insets: 0;
+    -fx-background-radius: 4;
+    -fx-padding: 2;
+}
