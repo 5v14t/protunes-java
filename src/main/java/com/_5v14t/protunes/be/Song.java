@@ -9,7 +9,7 @@ public class Song {
     private String artist;
     private String genre;
     private File file;
-    private int durationSeconds;
+    private double durationSeconds;
     private BufferedImage artwork;
     private final int id;
 
@@ -27,7 +27,7 @@ public class Song {
     public String getTitle() {return title;}
     public String getArtist() {return artist;}
     public String getGenre() {return genre;}
-    public int getDuration() {return durationSeconds;}
+    public double getDuration() {return durationSeconds;}
     public File getFile() {return file;}
     public BufferedImage getArtwork() {return artwork;}
 
@@ -49,8 +49,8 @@ public class Song {
     }
 
     public String getFormattedDuration() {
-        int minutes = durationSeconds / 60;
-        int seconds = durationSeconds % 60;
+        double minutes = durationSeconds / 60;
+        double seconds = durationSeconds % 60;
         return String.format("%d:%02d", minutes, seconds);
     }
 }
