@@ -11,16 +11,17 @@ public class Song {
     private File file;
     private int durationSeconds;
     private BufferedImage artwork;
+    private final int id;
 
 
     // Constructor
-    public Song(String title, String artist, String genre, File file, int duration, int id) {
+    public Song(int id, String title, String artist, String genre) {
+        this.id = id;
         this.title = title;
         this.artist = artist;
         this.genre = genre;
-        this.file = file;
-        this.durationSeconds = duration;
     }
+
 
     // Getters
     public String getTitle() {return title;}
@@ -29,6 +30,8 @@ public class Song {
     public int getDuration() {return durationSeconds;}
     public File getFile() {return file;}
     public BufferedImage getArtwork() {return artwork;}
+
+    public int getId() {return id;}
 
 
     // Setters
