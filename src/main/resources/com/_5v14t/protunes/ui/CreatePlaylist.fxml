@@ -19,7 +19,7 @@
                     </font>
                 </Label>
                 <Region HBox.hgrow="ALWAYS" />
-                <TextField fx:id="lblPlaylistTitle" maxHeight="1.7976931348623157E308" style="-fx-background-color: #343442;">
+                <TextField fx:id="lblPlaylistTitle" maxHeight="1.7976931348623157E308" style="-fx-background-color: #343442; -fx-text-fill: white;">
                     <font>
                         <Font name="SF Pro Display Regular" size="16.0" />
                     </font>
