@@ -10,7 +10,7 @@
 
 <?import javafx.scene.control.Label?>
 
-<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="875.0" spacing="20.0" style="-fx-background-color: #121217;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:controller="com._5v14t.protunes.ui.ProTunesController" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="875.0" spacing="20.0" style="-fx-background-color: #121217;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
     <HeaderBar fx:id="headerBar" minHeight="20" prefHeight="20" maxHeight="20">
         <center>
             <Label text="ProTunes" style="-fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-font-family:'SF Pro Bold'; " textFill="WHITE" />
