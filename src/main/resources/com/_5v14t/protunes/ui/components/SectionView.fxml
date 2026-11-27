@@ -52,7 +52,7 @@
 
     </VBox>
 
-    <Button fx:id="btnAdd" onMouseClicked="#btnAddClicked"
+    <Button fx:id="btnAdd"
             alignment="CENTER"
             mnemonicParsing="false"
             managed="${btnAdd.visible}"
