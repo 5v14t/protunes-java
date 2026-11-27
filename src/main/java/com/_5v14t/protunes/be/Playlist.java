@@ -8,6 +8,7 @@ public class Playlist {
     private String playlistName;
     private final ArrayList<Song> songs = new ArrayList<>();
     private int id;
+
 // constructor
     public Playlist(String name, int id) {
         this.playlistName = name;
@@ -28,12 +29,4 @@ public class Playlist {
     public void setName(String name){this.playlistName = name;}
      // Read-only view, so other classes must use add/remove
     public List<Song> getSongs() {return Collections.unmodifiableList(songs);}
-  
-
-}
-
-
-
-
-
 }

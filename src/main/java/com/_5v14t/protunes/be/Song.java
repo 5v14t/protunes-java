@@ -2,6 +2,7 @@ package com._5v14t.protunes.be;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.nio.file.Path;
 
 public class Song {
     private String title;
