@@ -35,7 +35,7 @@ public class Song {
     public void setArtist(String artist) {this.artist = artist;}
     public void setGenre(String genre) {this.genre = genre;}
     public void setDuration(int duration) {this.durationSeconds = duration;}
-    public void setFile(File file) {this.file = file;}
+    public void setFile(Path path) {this.file = new File(path.toString());}
     public void setArtwork(BufferedImage artwork) {this.artwork = artwork;}
 
     // Other
